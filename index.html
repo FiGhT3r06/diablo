@@ -8,8 +8,8 @@
       z-index: 9999;
       background: #222;
       border: 1px solid #444;
-      padding: 12px;
-      padding-top: 24px; /* Prostor pro křížek */
+      padding: 15px;
+      padding-top: 35px; /* Větší prostor nahoře pro jasně viditelné tlačítko */
       color: #fff;
       font-family: sans-serif;
       font-size: 13px;
@@ -22,27 +22,29 @@
       font-weight: bold;
       text-decoration: underline;
     }
-    /* Styl pro zavírací tlačítko */
+    /* Nové výrazné zavírací tlačítko přímo v bublině */
     #gdrive-close {
       position: absolute;
-      top: 4px;
+      top: 5px;
       right: 8px;
-      background: none;
-      border: none;
-      color: #aaa;
-      font-size: 16px;
+      background: #444; /* Šedé pozadí pod křížkem, aby šlo vidět */
+      border: 1px solid #666;
+      color: #fff;
+      font-size: 14px;
       font-weight: bold;
       cursor: pointer;
-      padding: 0;
+      padding: 2px 8px;
+      border-radius: 3px;
     }
     #gdrive-close:hover {
+      background: #ff3333; /* Při najetí myší zčervená */
       color: #fff;
     }
   </style>
 </head><body><noscript>You need to enable JavaScript to run this app.</noscript>
 
   <div id="gdrive-helper">
-    <button id="gdrive-close" onclick="document.getElementById('gdrive-helper').style.display='none';">×</button>
+    <button id="gdrive-close" onclick="document.getElementById('gdrive-helper').style.display='none';">ZAVŘÍT ✕</button>
     🤖 <b>Hraješ na tabletu?</b><br>
     1. <a href="https://docs.google.com/uc?export=download&id=1Cp1NqBS3BmkvUjOsjbBXmlpCbGCIDBxe" target="_blank">Klikni sem pro stažení DIABDAT.MPQ</a> z tvé služby Google Drive do paměti tabletu.<br><br>
     2. Níže klikni na <b>Select MPQ</b> a soubor ze složky stažených souborů vyber. Prohlížeč si ho pak už navždy zapamatuje!
